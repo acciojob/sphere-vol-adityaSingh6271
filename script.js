@@ -1,5 +1,5 @@
 function volume_sphere() {
-    // Get the radius value from the input field
+    //Write your code here
     var radius = parseFloat(document.getElementById('radius').value);
 
     // Check if the entered value is a valid number
@@ -17,10 +17,6 @@ function volume_sphere() {
     // Prevent the form from submitting
     return false;
 }
+ 
 
-window.onload = function () {
-    document.getElementById('MyForm').onsubmit = function () {
-        volume_sphere();
-        return false;
-    };
-};
+window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
